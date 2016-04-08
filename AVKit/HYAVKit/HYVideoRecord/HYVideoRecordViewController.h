@@ -11,6 +11,6 @@ typedef void (^FinishRecordBlock)(NSDictionary *didFinishRecordBlock);
 
 @interface HYVideoRecordViewController : UIViewController
 @property (nonatomic) BOOL needSavedPhotosAlbum;
-- (void)setFinishRecordBlock:(FinishRecordBlock )finishRecordBlock;
+- (void)setFinishRecordBlock:(FinishRecordBlock )finishRecordBlockDic;
 
 @end

@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITableView *videoTableView;
+@property (nonatomic, strong) NSMutableArray *videoArray;
 
 @end
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		444474E71CB759FE0080D7D7 /* HYVideoPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 444474E51CB759FE0080D7D7 /* HYVideoPlayViewController.m */; };
+		444474E81CB759FE0080D7D7 /* HYVideoPlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444474E61CB759FE0080D7D7 /* HYVideoPlayViewController.xib */; };
 		448039EE1CB6327700EC297C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 448039ED1CB6327700EC297C /* main.m */; };
 		448039F11CB6327700EC297C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 448039F01CB6327700EC297C /* AppDelegate.m */; };
 		448039F41CB6327700EC297C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 448039F31CB6327700EC297C /* ViewController.m */; };
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		444474E41CB759FE0080D7D7 /* HYVideoPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYVideoPlayViewController.h; sourceTree = "<group>"; };
+		444474E51CB759FE0080D7D7 /* HYVideoPlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYVideoPlayViewController.m; sourceTree = "<group>"; };
+		444474E61CB759FE0080D7D7 /* HYVideoPlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HYVideoPlayViewController.xib; sourceTree = "<group>"; };
 		448039E91CB6327700EC297C /* AVKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448039ED1CB6327700EC297C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		448039EF1CB6327700EC297C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		444474E31CB759DF0080D7D7 /* HYVideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				444474E41CB759FE0080D7D7 /* HYVideoPlayViewController.h */,
+				444474E51CB759FE0080D7D7 /* HYVideoPlayViewController.m */,
+				444474E61CB759FE0080D7D7 /* HYVideoPlayViewController.xib */,
+			);
+			path = HYVideoPlay;
+			sourceTree = "<group>";
+		};
 		448039E01CB6327700EC297C = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +171,7 @@
 		44803A111CB6328F00EC297C /* HYAVKit */ = {
 			isa = PBXGroup;
 			children = (
+				444474E31CB759DF0080D7D7 /* HYVideoPlay */,
 				44803A251CB6459B00EC297C /* Assets */,
 				44803A411CB651F100EC297C /* MZTimerLabel */,
 				44803A381CB64B9000EC297C /* MBProgressHud */,
@@ -300,6 +316,7 @@
 				44803A281CB645B100EC297C /* 相机翻转.png in Resources */,
 				44803A2C1CB646BA00EC297C /* 瞄准框.png in Resources */,
 				44803A361CB6499C00EC297C /* 开始.png in Resources */,
+				444474E81CB759FE0080D7D7 /* HYVideoPlayViewController.xib in Resources */,
 				448039FC1CB6327700EC297C /* LaunchScreen.storyboard in Resources */,
 				44803A4A1CB6584D00EC297C /* 关闭@2x.png in Resources */,
 				44803A451CB651F100EC297C /* Info.plist in Resources */,
@@ -331,6 +348,7 @@
 				448039F41CB6327700EC297C /* ViewController.m in Sources */,
 				44803A401CB64B9000EC297C /* MBProgressHUD.m in Sources */,
 				448039F11CB6327700EC297C /* AppDelegate.m in Sources */,
+				444474E71CB759FE0080D7D7 /* HYVideoPlayViewController.m in Sources */,
 				44803A3E1CB64B9000EC297C /* MBProgressHUD+Add.m in Sources */,
 				44803A201CB63FD800EC297C /* HYVideoRecordViewController.m in Sources */,
 				44803A461CB651F100EC297C /* MZTimerLabel.m in Sources */,
