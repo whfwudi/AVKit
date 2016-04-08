@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 #import "HYVideoRecordViewController.h"
-#import "HYVideoPlayViewController.h"
+#import "VideoTableViewCell.h"
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+#define kScreenWidth CGRectGetWidth([UIScreen mainScreen].bounds)
+#define kScreenHeight CGRectGetHeight([UIScreen mainScreen].bounds)
+
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -40,23 +43,19 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *identifier = @"videocell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
+    VideoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell = [[VideoTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     NSMutableDictionary *obj  = videoArray[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"%@",obj[@"url"]];
-    
+    cell.nameLabel.text = [NSString stringWithFormat:@"%@",obj[@"url"]];
+  
     return cell;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSMutableDictionary *obj  = videoArray[indexPath.row];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    HYVideoPlayViewController *playVC = [[HYVideoPlayViewController alloc] initWithNibName:NSStringFromClass([HYVideoPlayViewController class]) bundle:nil];
-    playVC.videoUrl = [NSString stringWithFormat:@"%@",obj[@"url"]];
-    [self.navigationController pushViewController:playVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

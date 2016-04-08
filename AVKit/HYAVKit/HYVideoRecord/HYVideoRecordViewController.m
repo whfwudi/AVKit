@@ -219,7 +219,7 @@ typedef void (^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
         }];
     } else {
         if (_finishRecordBlock) {
-            _finishRecordBlock(@{@"url" : outputFileURL});
+            _finishRecordBlock(@{@"url" : [NSString stringWithFormat:@"%@",outputFileURL]});
         }
         [self setFinishRecordBlock:_finishRecordBlock];
     }
