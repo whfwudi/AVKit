@@ -71,7 +71,7 @@
  */
 -(AVPlayerItem *)getPlayItem:(NSString *)videoString
 {
-    NSURL *url = [NSURL fileURLWithPath:videoUrl];
+    NSURL *url = [NSURL fileURLWithPath:videoString];
     AVPlayerItem *playerItem = [AVPlayerItem playerItemWithURL:url];
     return playerItem;
 }

@@ -146,8 +146,8 @@ typedef void (^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
         }
         //预览图层和视频方向保持一致
         captureConnection.videoOrientation = [self.captureVideoPreviewLayer connection].videoOrientation;
-//        NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"myMovie.mov"];
-        NSString *outputFielPath=outputFielPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingString:@"/myMovie.mov"];
+        NSString *outputFielPath=[NSTemporaryDirectory() stringByAppendingString:@"myMovie.mov"];
+//        NSString *outputFielPath=outputFielPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingString:@"/myMovie.mov"];
         
         NSLog(@"save path is :%@",outputFielPath);
         NSURL *fileUrl = [NSURL fileURLWithPath:outputFielPath];
