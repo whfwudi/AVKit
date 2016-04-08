@@ -12,6 +12,8 @@
 #import "MBProgressHUD+Add.h"
 #import "MZTimerLabel.h"
 
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r / 256.0 green:g / 256.0 blue:b / 256.0 alpha:a]
+
 typedef void (^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 
 //视频文件输出代理
@@ -39,6 +41,8 @@ typedef void (^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
 @property (weak, nonatomic) IBOutlet MZTimerLabel *timerLabel;
 //顶部的视图
 @property (weak, nonatomic) IBOutlet UIView *topView;
+//底部的视图
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 @property (nonatomic, strong) FinishRecordBlock finishRecordBlock;
 
@@ -51,6 +55,8 @@ typedef void (^PropertyChangeBlock)(AVCaptureDevice *captureDevice);
     if (self.navigationController) {
         self.navigationController.navigationBarHidden = YES;
     }
+    _topView.backgroundColor = [UIColor blackColor];
+    _bottomView.backgroundColor = [UIColor blackColor];
     //初始化会话
     _captureSession = [[AVCaptureSession alloc] init];
     //设置分辨率

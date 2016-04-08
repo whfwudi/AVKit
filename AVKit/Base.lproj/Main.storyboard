@@ -12,23 +12,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vl0-5X-eiC">
-                                <rect key="frame" x="137" y="243" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="btnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ANk-oo-RCM"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Dt6-y8-iSI"/>
+                    <navigationItem key="navigationItem" id="Dt6-y8-iSI">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="L2c-JU-aU7">
+                            <connections>
+                                <action selector="btnClicked:" destination="BYZ-38-t0r" id="ekp-LF-bAz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="584"/>
+            <point key="canvasLocation" x="681" y="744"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bbv-1W-rYM">
@@ -46,7 +42,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59l-og-lnZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299.73333333333335" y="1055.5333333333333"/>
+            <point key="canvasLocation" x="270" y="744"/>
         </scene>
     </scenes>
 </document>

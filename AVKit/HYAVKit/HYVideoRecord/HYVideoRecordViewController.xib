@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HYVideoRecordViewController">
             <connections>
+                <outlet property="bottomView" destination="9Ji-FL-Ebb" id="4hT-Mk-mIg"/>
                 <outlet property="focusCursor" destination="c74-xF-1R2" id="lm9-dF-tKb"/>
                 <outlet property="takeButton" destination="5tO-bP-EDj" id="bOz-vz-plI"/>
                 <outlet property="timerLabel" destination="Jif-RB-Sw6" id="cKz-j2-Rbe"/>
@@ -83,7 +84,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <nil key="simulatedTopBarMetrics"/>
-            <point key="canvasLocation" x="513" y="580"/>
+            <point key="canvasLocation" x="786" y="626"/>
         </view>
     </objects>
     <resources>
